@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="info-container">
+    <div class="country-info">
+        <h3>{{ current_name }}</h3>
+        <img src="{{ current_flag }}" alt="Flag of {{ current_name }}" class="flag-image">
+        <p><strong>Capital:</strong> {{ current_capital }}</p>
+        <p><strong>Language(s):</strong> {{ current_languages }}</p>
+        <p><strong>Country Code:</strong> {{ current_country_code }}</p>
+        <p><strong>Population:</strong> {{ current_population }}</p>
+        <p><strong>Currency:</strong> {{ current_currency }}</p>
+    </div>
+    <div class="target-info">
+        <h3>{{ target_name }}</h3>
+        <img src="{{ target_flag }}" alt="Flag of {{ target_name }}" class="flag-image">
+        <p><strong>Capital:</strong> {{ target_capital }}</p>
+        <p><strong>Language(s):</strong> {{ target_languages }}</p>
+        <p><strong>Country Code:</strong> {{ target_country_code }}</p>
+        <p><strong>Population:</strong> {{ target_population }}</p>
+        <p><strong>Currency:</strong> {{ target_currency }}</p>
+    </div>
+</div>
+<h4>The exchange rate from <strong>{{ current_currency }}</strong> to <strong>{{ target_currency }}</strong> is: <strong>1 {{ current_currency }} = {{ exchange_rate }} {{ target_currency }}</strong>.</h4>
+<a href="{{ url_for('index') }}" class="button">Return Home</a>
+{% endblock %}

@@ -1,0 +1,118 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapercave.com/wp/wp5317953.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-opacity: 0.2;
+}
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+h3,h4 {
+    color: white;
+    text-align: center;
+}
+
+.error-message {
+    background-color: #444444;
+    border: 6px solid #B30505;
+    margin-bottom: 12px;
+    width: 40%;
+    text-align: center; /* 에러 메시지 내부의 텍스트를 가운데 정렬합니다 */
+}
+
+.error-message .button {
+    background-color: #727272;
+    color: white;
+    padding: 12px 12px;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+}
+
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #444444;
+    border-radius: 5px;
+    color: white;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #black;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #727272;
+    color: white;
+    padding: 12px 12px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    text-align: center;
+    align: center;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    bottom: 0;
+}
+
+a {
+    color: #4A67B1;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.country-info, .target-info {
+    background-color: #444444;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px white;
+    margin: 20px;
+}
+
+.flag-image {
+    width: 100%;
+    height: auto;
+}
+
+p{
+    color: white;
+}
+
+

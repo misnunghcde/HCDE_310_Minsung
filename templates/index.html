@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2>Country Information</h2>
+    <form action='/results' method="post">
+        <label for="current_country">Your Current Country:</label><br>
+        <input type="text" id="current_country" name="current_country"><br>
+        <label for="target_country">Country You Want to Know About:</label><br>
+        <input type="text" id="target_country" name="target_country"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}
+
+
+

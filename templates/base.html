@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>HCDE310_Minsung</title>
+</head>
+<body>
+    <h1>Countries INFO</h1>
+    {% block content %}{% endblock %}
+    <footer>
+        Data from <a href="https://restcountries.com/">REST Countries</a> and <a href="https://www.exchangerate-api.com/">ExchangeRage-API</a>.
+    </footer>
+</body>
+</html>
